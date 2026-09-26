@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#160f13">
+  <meta name="description" content="Zvanična stranica Igora Stellara — muzika, FOR YOU COVERS i rezervacije nastupa.">
+  <title>Igor Stellar — Zvanična stranica</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Preskoči na sadržaj</a>
+
+  <div class="sound-gate" id="soundGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="gate-card">
+      <img src="assets/images/igor-stellar-signature-white.png" alt="Igor Stellar" class="gate-signature">
+      <p class="eyebrow">Zvanična stranica</p>
+      <h1 id="gateTitle">Uđi u svet muzike</h1>
+      <p>Doživi stranicu uz pesmu „Zažmuri“.</p>
+      <button class="button button-gold" id="enterWithSound" type="button"><span aria-hidden="true">▶</span> Uđi i poslušaj</button>
+      <button class="text-button" id="enterSilent" type="button">Nastavi bez muzike</button>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Igor Stellar — početna"><img src="assets/images/igor-stellar-signature-white.png" alt="Igor Stellar"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Otvori meni"><span></span><span></span></button>
+    <nav class="site-nav" id="siteNav" aria-label="Glavna navigacija">
+      <a href="#muzika">Muzika</a><a href="#o-igoru">O Igoru</a><a href="#for-you">FOR YOU COVERS</a><a href="#galerija">Galerija</a><a class="nav-cta" href="#kontakt">Rezerviši nastup</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <img class="hero-image" src="assets/images/stage-red-curtain.webp" alt="Igor Stellar peva na sceni ispred crvene pozorišne zavese">
+      <div class="hero-wash"></div>
+      <div class="notes" aria-hidden="true"><span>♪</span><span>♫</span><span>♪</span><span>♬</span></div>
+      <div class="hero-content">
+        <p class="eyebrow">Pop · Rock · Etno-pop · Folk-pop</p>
+        <img class="hero-signature" src="assets/images/igor-stellar-signature-white.png" alt="Igor Stellar">
+        <h1 id="heroTitle">Pesme koje ostaju.</h1>
+        <p class="hero-copy">Poznate melodije, snažna emocija i glas koji ih vraća u život.</p>
+        <div class="hero-actions"><a class="button button-gold" href="#muzika">Poslušaj muziku</a><a class="button button-ghost" href="#kontakt">Rezerviši nastup</a></div>
+      </div>
+      <a class="scroll-cue" href="#muzika" aria-label="Nastavi na muziku"><span></span>Otkrij više</a>
+    </section>
+
+    <section class="music-section section" id="muzika" aria-labelledby="musicTitle">
+      <div class="section-heading"><p class="eyebrow">Slušaj</p><h2 id="musicTitle">Muzika koja nosi priču</h2><p>Pet pažljivo snimljenih pesama. Izaberi numeru i prepusti se zvuku.</p></div>
+      <div class="music-layout">
+        <article class="now-playing-card">
+          <div class="vinyl" aria-hidden="true"><div class="vinyl-label">IS</div></div>
+          <div class="now-playing-copy"><p class="micro-label">Sada svira</p><h3 id="largeTrackTitle">Zažmuri</h3><p>Igor Stellar</p><button class="round-play" id="largePlay" type="button" aria-label="Pusti Zažmuri">▶</button></div>
+        </article>
+        <ol class="track-list" id="trackList">
+          <li><button class="track active" data-track="0" type="button"><span class="track-number">01</span><span><strong>Zažmuri</strong><small>Igor Stellar</small></span><span class="track-icon">▶</span></button></li>
+          <li><button class="track" data-track="1" type="button"><span class="track-number">02</span><span><strong>Da si tu</strong><small>Igor Stellar</small></span><span class="track-icon">▶</span></button></li>
+          <li><button class="track" data-track="2" type="button"><span class="track-number">03</span><span><strong>Želim ti reći</strong><small>Igor Stellar</small></span><span class="track-icon">▶</span></button></li>
+          <li><button class="track" data-track="3" type="button"><span class="track-number">04</span><span><strong>Tuge od sna</strong><small>Igor Stellar</small></span><span class="track-icon">▶</span></button></li>
+          <li><button class="track" data-track="4" type="button"><span class="track-number">05</span><span><strong>Yugo</strong><small>Igor Stellar</small></span><span class="track-icon">▶</span></button></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="about-section section" id="o-igoru" aria-labelledby="aboutTitle">
+      <div class="about-image-wrap reveal"><img src="assets/images/piano-room.webp" alt="Igor Stellar pored klavira u toplom salonskom ambijentu" loading="lazy"><span class="image-caption">Igor Stellar</span></div>
+      <div class="about-copy reveal">
+        <p class="eyebrow">O umetniku</p><h2 id="aboutTitle">Glas poznatih melodija u novom svetlu</h2>
+        <p class="lead">Igor Stellar je umetničko ime pevača Igora Vlahovića.</p>
+        <p>Njegov repertoar spaja domaći pop i rok sa etno-pop i folk-pop zvukom, a u planu su i pažljivo odabrani međunarodni klasici. U središtu njegovog izvođenja nalaze se melodija, tekst i emocija — pesme koje publika prepoznaje već u prvim taktovima.</p>
+        <p>Otvoren je za nastupe svuda gde ga publika pozove: od intimnih večeri i restorana do većih proslava i događaja.</p>
+        <a class="inline-link" href="#kontakt">Pozovi Igora za nastup <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="covers-section section" id="for-you" aria-labelledby="coversTitle">
+      <div class="covers-backdrop" aria-hidden="true">FOR YOU</div>
+      <div class="covers-copy reveal">
+        <p class="eyebrow">Poseban projekat</p><h2 id="coversTitle">FOR YOU COVERS</h2>
+        <p class="lead">Serija posvećena osobi koju Igor najviše voli — sazdana od pesama koje je ta osoba volela.</p>
+        <p>Od intimnih akustičnih postava do punih aranžmana u različitim stilovima, svaka obrada nosi istu nit: ličnu emociju pretočenu u glas.</p>
+        <a class="button button-gold" href="https://www.youtube.com/watch?v=6qEryWYYjg4&amp;list=PLACjv4Z88MqyOLvrEfcLT3jkC6XacnvCI" target="_blank" rel="noopener">Cela serija na YouTube-u</a>
+      </div>
+      <div class="video-frame reveal"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLACjv4Z88MqyOLvrEfcLT3jkC6XacnvCI" title="Igor Stellar — FOR YOU COVERS plejlista" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </section>
+
+    <section class="gallery-section section" id="galerija" aria-labelledby="galleryTitle">
+      <div class="section-heading left"><p class="eyebrow">Galerija</p><h2 id="galleryTitle">Na sceni i između pesama</h2></div>
+      <div class="gallery-grid">
+        <figure class="gallery-wide reveal"><img src="assets/images/river-sunset.webp" alt="Igor Stellar na kamenim stepenicama uz reku u zalasku sunca" loading="lazy"></figure>
+        <figure class="gallery-tall reveal"><img src="assets/images/stage-vintage-mic.webp" alt="Igor Stellar peva uz vintage mikrofon" loading="lazy"></figure>
+        <figure class="gallery-small reveal"><img src="assets/images/city-night.webp" alt="Portret Igora Stellara u večernjoj gradskoj ulici" loading="lazy"></figure>
+        <figure class="gallery-wide gallery-bottom reveal"><img src="assets/images/waterfront-dusk.webp" alt="Igor Stellar na molu pored jezera u sumrak" loading="lazy"></figure>
+      </div>
+    </section>
+
+    <section class="contact-section" id="kontakt" aria-labelledby="contactTitle">
+      <img src="assets/images/stage-red-curtain.webp" alt="" class="contact-background" loading="lazy"><div class="contact-overlay"></div>
+      <div class="contact-content reveal"><p class="eyebrow">Rezervacije</p><h2 id="contactTitle">Neka muzika bude deo vaše večeri.</h2><p>Za nastupe, proslave i posebne događaje kontaktirajte Igora direktno.</p>
+        <div class="contact-actions"><a class="contact-link" href="tel:+381693127922"><small>Telefon</small><strong>069 312 79 22</strong></a><a class="contact-link" href="mailto:ii1410278@gmail.com"><small>E-mail</small><strong>ii1410278@gmail.com</strong></a></div>
+        <div class="social-links" aria-label="Društvene mreže"><a href="https://www.youtube.com/@igorigormusic2569" target="_blank" rel="noopener">YouTube</a><a href="https://www.facebook.com/profile.php?id=61550018227855" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/vlahovic_igor_/" target="_blank" rel="noopener">Instagram</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="assets/images/igor-stellar-signature-white.png" alt="Igor Stellar">
+    <div class="footer-copy">
+      <p>© <span id="year"></span> Igor Stellar. Sva prava zadržana.</p>
+      <p>Dizajn i održavanje sajta: <a href="https://websiteis.online" target="_blank" rel="noopener">websiteis.online</a></p>
+    </div>
+  </footer>
+  <div class="audio-dock" id="audioDock" aria-label="Muzički plejer">
+    <button class="dock-play" id="dockPlay" type="button" aria-label="Pusti Zažmuri">▶</button><div class="dock-track"><strong id="dockTitle">Zažmuri</strong><span>Igor Stellar</span></div><span class="time" id="currentTime">0:00</span><input id="seek" class="seek" type="range" min="0" max="100" value="0" aria-label="Pozicija u pesmi"><span class="time" id="duration">0:00</span><button class="mute" id="mute" type="button" aria-label="Isključi zvuk">◖))</button><audio id="audio" preload="metadata" src="assets/audio/zazmuri.mp3"></audio>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
