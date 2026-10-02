@@ -1,9 +1,14 @@
 const tracks=[
+  {title:"Crni leptir",src:"assets/audio/crni-leptir.mp3"},
+  {title:"Zima je",src:"assets/audio/zima-je.mp3"},
   {title:"Zažmuri",src:"assets/audio/zazmuri.mp3"},
-  {title:"Da si tu",src:"assets/audio/da-si-tu.mp3"},
-  {title:"Želim ti reći",src:"assets/audio/zelim-ti-reci.mp3"},
+  {title:"Yugo",src:"assets/audio/yugo.mp3"},
   {title:"Tuge od sna",src:"assets/audio/tuge-od-sna.mp3"},
-  {title:"Yugo",src:"assets/audio/yugo.mp3"}
+  {title:"Želim ti reći",src:"assets/audio/zelim-ti-reci.mp3"},
+  {title:"Eh da je tuga snijeg",src:"assets/audio/eh-da-je-tuga-snijeg.mp3"},
+  {title:"Da si tu",src:"assets/audio/da-si-tu.mp3"},
+  {title:"Cipele",src:"assets/audio/cipele.mp3"},
+  {title:"Gdje Dunav ljubi nebo",src:"assets/audio/gde-dunav-ljubi-nebo.mp3"}
 ];
 const audio=document.querySelector("#audio"),gate=document.querySelector("#soundGate"),dock=document.querySelector("#audioDock"),dockPlay=document.querySelector("#dockPlay"),largePlay=document.querySelector("#largePlay"),largeCard=document.querySelector(".now-playing-card"),dockTitle=document.querySelector("#dockTitle"),largeTitle=document.querySelector("#largeTrackTitle"),seek=document.querySelector("#seek"),currentTime=document.querySelector("#currentTime"),duration=document.querySelector("#duration"),mute=document.querySelector("#mute"),trackButtons=[...document.querySelectorAll(".track")];
 let activeTrack=0;
